@@ -1,0 +1,183 @@
+$headerHeight: 60px
+
+$headerBackgroundColor: rgba(255, 255, 255, 1)
+$headerFontColor: #333
+$hoverFontColor: #0076df
+
+header.floating
+  width: 90%
+  left: 5%
+  top: 10px
+  box-shadow: 0 0 1px #333
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  -o-box-sizing: border-box
+  box-sizing: border-box
+  border-radius: 5px
+
+header 
+  position: fixed
+  top: 0
+  left: 0
+  height: $headerHeight
+  line-height: $headerHeight
+  width: 100%
+  color: $headerFontColor
+  z-index: 2009092093029
+  background: $headerBackgroundColor
+  h1 
+    line-height: $headerHeight
+  div.logo-title
+    float: left
+    display: inline-block
+  nav
+    float: right
+    display: inline-block
+  div.menu-bars
+    line-height: $headerHeight
+    height: $headerHeight
+    text-align: center
+    right: 0.5rem
+    top: 0
+    font-size: 2rem
+    i
+      line-height: $headerHeight
+
+
+
+nav ul
+  list-style: none
+  display: inline-table
+  position: relative
+
+nav ul li
+  float: left
+  color: $headerFontColor
+  padding: 0 0.4rem
+  cursor: pointer
+  font-size: 1.1rem
+  @include transition(all, 0.1s)
+  &:hover
+    color: $hoverFontColor
+    a 
+      color: $hoverFontColor
+  a 
+    display: block
+    @include transition(all, 0.1s)
+
+nav ul li:hover > ul
+  display: block
+
+nav ul ul 
+  display: none
+  background: $headerBackgroundColor
+  color: $headerFontColor
+  position: absolute
+  top: 100%
+  li
+    float: none
+    position: relative
+    line-height: 1.4
+    padding: 0.2rem 0.5rem
+    a
+      color: $headerFontColor
+      &:hover
+        background: $headerBackgroundColor
+        color: $hoverFontColor
+
+
+
+
+
+
+
+
+// header
+//   position: fixed
+//   top: 0
+//   left: 0
+//   width: 100%
+//   // overflow: hidden
+//   height: 80px
+//   line-height: 80px
+//   z-index: 20003299000
+//   background: rgba(255, 255, 255, 0)
+//   color: #$headerFontColor
+//   box-shadow: 0 0 2px rgba(0, 0, 0, 0)
+//   @include transition
+//   h1, nav, input
+//     display: inline-block
+//     height: 80px
+//     line-height: 80px
+//     margin: 0
+//     padding: 0
+//   nav
+//     float: right
+//   a
+//     color: #fff
+//     @include transition
+//     text-decoration: none
+//     padding: 0 2em
+//     &:hover
+//       text-decoration: none
+//       color: red
+//   div.bars
+//     width: 60px
+//     height: 60px
+//     position: absolute
+//     display: inline-block
+//     top: 10px
+//     right: 3.6%
+//     text-align: center
+//     font-size: 40px
+//     line-height: 68px
+//     display: none
+
+// header.normal
+//   color: #333
+//   box-shadow: 0 0 2px rgba(0, 0, 0, 1)
+//   background: rgba(255, 255, 255, 1)
+//   a
+//     color: #333
+//     &:hover
+//       text-decoration: none
+//       color: red
+
+// @media (max-width: 70em)
+//   header
+//     a
+//       padding: 0 0.5em
+
+// @media (max-width: 58em)
+//   header
+//     div.bars
+//       display: inline-block
+//     nav
+//       box-shadow: 0 0 2px black
+//       background: white
+//       max-height: 500px
+//       max-height: 80vh
+//       overflow: scroll
+//       color: #333
+//       display: none
+//       height: auto
+//       width: 100%
+//       a, input
+//         display: inline-block
+//         width: 100%
+//         color: black
+//         padding: 0
+//         text-align: center
+//       input
+//         width: 80%
+//         position: relative
+//         left: 10%
+//         margin-left: auto
+//         margin-right: auto
+
+
+
+
+
+

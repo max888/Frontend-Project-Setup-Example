@@ -1,0 +1,36 @@
+include mixins/_document_head.jade
+include mixins/_header.jade
+include mixins/_footer.jade
+include mixins/_scripts.jade
+
+doctype
+html
+  mixin documentHead
+  body
+    mixin header
+    
+    div.full-carousel.bg-blue
+    div.container
+      div.clearfix.two-cols
+        div.col.md-col-6.sm-col-12.bg-blue
+          p tttttthis is big blue
+        div.col.md-col-6.sm-col-12.bg-yellow
+      div.clearfix.three-cols
+        div.col.md-col-4.sm-col-12.bg-blue
+        div.col.md-col-4.sm-col-12.bg-yellow
+        div.col.md-col-4.sm-col-12.bg-red
+      div.table
+        div.table-cell.sm-col-8.bg-blue(style="height: 100vh;")
+        div.table-cell.sm-col-4
+          h1.m0 This is a test
+
+
+
+    mixin scripts
+    
+    
+    
+    
+    
+    
+    
